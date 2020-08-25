@@ -1,0 +1,20 @@
+{
+  "Parameters": {
+    // define global settings
+    "Enable": true,
+
+    // define Mailing workflow settings
+    "@Mailing": {
+      "DailyMailingSchedule": "0 0 8 ? * MON-FRI *",
+      "WeeklyMailingSchedule": "0 0 7 ? * SAT *"
+    },
+
+    // define Mailing workflow settings
+    "@Maintenance": {
+      "CleanupSchedule": "0 20 5 ? * * *",
+      "ArchivingSchedule": "0 0 6 ? * SUN *",
+      "MontlyReportsSchedule": "0 30 7 L * ? *",
+      "ReportFormat":  "PDF"
+    }
+  }
+}

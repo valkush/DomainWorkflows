@@ -1,0 +1,61 @@
+﻿@model IEnumerable<CustomerService.Models.QuestionModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@using CustomerService.Domain;
+
+
+<h1>Open Questions</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Text)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Text)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @if (item.Status == QuestionStatus.Assigned || item.Status == QuestionStatus.Reopen)
+                    {
+                        @Html.ActionLink("Answer", "Answer", new { id=item.Id }, new { @class="btn btn-primary" })
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

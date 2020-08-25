@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DomainWorkflows.Workflows" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Messenger.Events\Messenger.Events.csproj" />
+    <ProjectReference Include="..\Messenger.Services\Messenger.Services.csproj" />
+  </ItemGroup>
+
+</Project>

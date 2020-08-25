@@ -1,0 +1,32 @@
+﻿@model CustomerService.Models.AnswerModel
+
+@{
+    ViewData["Title"] = "Answer";
+}
+
+<h1>Answer</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Answer">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <input asp-for="QuestionId" class="form-control" />            
+            <div class="form-group">
+                <label asp-for="QuestionText" class="control-label"></label>
+                <textarea asp-for="QuestionText" class="form-control" readonly></textarea>
+                <span asp-validation-for="QuestionText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AnswerText" class="control-label"></label>
+                <textarea asp-for="AnswerText" class="form-control"></textarea>
+                <span asp-validation-for="AnswerText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Answer" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+

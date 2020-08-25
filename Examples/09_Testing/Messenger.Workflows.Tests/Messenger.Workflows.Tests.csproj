@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DomainWorkflows.Testing" Version="1.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Messenger.Events\Messenger.Events.csproj" />
+    <ProjectReference Include="..\Messenger.Services\Messenger.Services.csproj" />
+    <ProjectReference Include="..\Messenger.Workflows\Messenger.Workflows.csproj" />
+  </ItemGroup>
+
+</Project>

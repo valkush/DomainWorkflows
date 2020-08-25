@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherWidget", "WeatherWidget\WeatherWidget.csproj", "{CD944337-A293-46FA-9B8D-78354227E2BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD944337-A293-46FA-9B8D-78354227E2BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD944337-A293-46FA-9B8D-78354227E2BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD944337-A293-46FA-9B8D-78354227E2BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD944337-A293-46FA-9B8D-78354227E2BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D0417A7-83C0-4C09-BBA0-861F2A65EC10}
+	EndGlobalSection
+EndGlobal

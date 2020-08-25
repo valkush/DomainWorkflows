@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DomainWorkflows.Workflows" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Invoicing.Api\Invoicing.Api.csproj" />
+    <ProjectReference Include="..\Invoicing.Events\Invoicing.Events.csproj" />
+  </ItemGroup>
+
+</Project>
